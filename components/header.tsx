@@ -42,7 +42,7 @@ export function Header() {
   const CurrentRoleIcon = currentRoleObj.icon
 
   return (
-    <header className="h-14 border-b border-border bg-card/90 backdrop-blur-md sticky top-0 z-30 flex items-center px-6 gap-4 shrink-0 print:hidden">
+    <header className="h-16 border-b border-border bg-card/90 backdrop-blur-md sticky top-0 z-30 flex items-center px-6 gap-4 shrink-0 print:hidden">
       {/* Global Search Bar */}
       <div className="flex-1 max-w-sm">
         <div className="relative">
@@ -113,9 +113,8 @@ export function Header() {
                     switchRole(r.id)
                     toast.success(`Active role switched to: ${r.label.toUpperCase()}`)
                   }}
-                  className={`flex items-center justify-between text-xs cursor-pointer ${
-                    isCurrent ? 'bg-primary/10 font-bold text-primary' : ''
-                  }`}
+                  className={`flex items-center justify-between text-xs cursor-pointer ${isCurrent ? 'bg-primary/10 font-bold text-primary' : ''
+                    }`}
                 >
                   <div className="flex items-center gap-2">
                     <Icon className="w-3.5 h-3.5" />
